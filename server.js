@@ -17,9 +17,9 @@ app.get('/progress', function (req, res) {
 });
 
 // start a server on port 80 and log its start to our console. Always use port 3000 for dev and port 80 in prod.
-var server = app.listen(3000, function () {
+var server = app.listen(80, function () {
 
   var port = server.address().port;
-  console.log('Example app listening on port ', port);
+  console.log('App running on ', port);
 
 });
