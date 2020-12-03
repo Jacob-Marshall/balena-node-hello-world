@@ -25,13 +25,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
+      # Runs a single command using the runners shell
       - name: Balena Push
-    # You may pin to the exact commit or the version.
-    # uses: theaccordance/balena-push@eee036073026ad3205c3143f6a23ebbe79789495
-    uses: theaccordance/balena-push@v1.0.0
-    with:
-      # API Key to interact with BalenaCloud
-      api-token: QqjweOE7wU7wHIXfjjqZZI2vGW40C7ei
-      # name of the BalenaCloud application
-      application-name: Desica
+        # You may pin to the exact commit or the version.
+        # uses: theaccordance/balena-push@eee036073026ad3205c3143f6a23ebbe79789495
+        runs-on: ubuntu-latest
+        uses: theaccordance/balena-push@v1.0.0
+        with:
+          # API Key to interact with BalenaCloud
+          api-token: QqjweOE7wU7wHIXfjjqZZI2vGW40C7ei
+          # name of the BalenaCloud application
+          application-name: Desica
